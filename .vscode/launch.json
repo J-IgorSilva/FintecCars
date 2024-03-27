@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FintecCarsApplication<fintec-cars>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.finteccars.FintecCarsApplication",
+            "projectName": "fintec-cars",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
