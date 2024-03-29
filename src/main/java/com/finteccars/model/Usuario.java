@@ -29,7 +29,7 @@ public class Usuario {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_pessoa", nullable = false)
-    private Pessoa pessoa;
+    private Pessoa idpessoa;
 
     public Integer getIdUsuario() {
         return idUsuario;
