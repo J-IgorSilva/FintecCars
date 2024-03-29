@@ -47,4 +47,100 @@ public class Modelo {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_plataforma", nullable = false)
     private Plataforma idPlataforma;
+
+    public Integer getIdModelo() {
+        return idModelo;
+    }
+
+    public void setIdModelo(Integer idModelo) {
+        this.idModelo = idModelo;
+    }
+
+    public String getNomeModelo() {
+        return nomeModelo;
+    }
+
+    public void setNomeModelo(String nomeModelo) {
+        this.nomeModelo = nomeModelo;
+    }
+
+    public String getCorModelo() {
+        return corModelo;
+    }
+
+    public void setCorModelo(String corModelo) {
+        this.corModelo = corModelo;
+    }
+
+    public Integer getQuantidadePortas() {
+        return quantidadePortas;
+    }
+
+    public void setQuantidadePortas(Integer quantidadePortas) {
+        this.quantidadePortas = quantidadePortas;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public Integer getRenavan() {
+        return renavan;
+    }
+
+    public void setRenavan(Integer renavan) {
+        this.renavan = renavan;
+    }
+
+    public String getNumeroChassi() {
+        return numeroChassi;
+    }
+
+    public void setNumeroChassi(String numeroChassi) {
+        this.numeroChassi = numeroChassi;
+    }
+
+    public String getNomePaisOrigen() {
+        return nomePaisOrigen;
+    }
+
+    public void setNomePaisOrigen(String nomePaisOrigen) {
+        this.nomePaisOrigen = nomePaisOrigen;
+    }
+
+    public Marca getIdMarca() {
+        return idMarca;
+    }
+
+    public void setIdMarca(Marca idMarca) {
+        this.idMarca = idMarca;
+    }
+
+    public Plataforma getIdPlataforma() {
+        return idPlataforma;
+    }
+
+    public void setIdPlataforma(Plataforma idPlataforma) {
+        this.idPlataforma = idPlataforma;
+    }
+
+    public Modelo(Integer idModelo, String nomeModelo, String corModelo, Integer quantidadePortas, String placa,
+            Integer renavan, String numeroChassi, String nomePaisOrigen, Marca idMarca, Plataforma idPlataforma) {
+        this.idModelo = idModelo;
+        this.nomeModelo = nomeModelo;
+        this.corModelo = corModelo;
+        this.quantidadePortas = quantidadePortas;
+        this.placa = placa;
+        this.renavan = renavan;
+        this.numeroChassi = numeroChassi;
+        this.nomePaisOrigen = nomePaisOrigen;
+        this.idMarca = idMarca;
+        this.idPlataforma = idPlataforma;
+    }
+
+    public Modelo(){}
 }

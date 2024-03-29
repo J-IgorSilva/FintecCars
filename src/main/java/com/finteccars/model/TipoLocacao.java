@@ -18,4 +18,27 @@ public class TipoLocacao {
 
     @Column(name = "tipo_de_locacao", nullable = false, length = 50)
     private String tipoDeLocacao;
+
+    public Integer getIdTipoLocacao() {
+        return idTipoLocacao;
+    }
+
+    public void setIdTipoLocacao(Integer idTipoLocacao) {
+        this.idTipoLocacao = idTipoLocacao;
+    }
+
+    public String getTipoDeLocacao() {
+        return tipoDeLocacao;
+    }
+
+    public void setTipoDeLocacao(String tipoDeLocacao) {
+        this.tipoDeLocacao = tipoDeLocacao;
+    }
+
+    public TipoLocacao(Integer idTipoLocacao, String tipoDeLocacao) {
+        this.idTipoLocacao = idTipoLocacao;
+        this.tipoDeLocacao = tipoDeLocacao;
+    }
+
+    public TipoLocacao(){}
 }

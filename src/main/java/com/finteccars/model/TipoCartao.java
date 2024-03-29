@@ -18,4 +18,27 @@ public class TipoCartao {
 
     @Column(name = "tipo_cartao", nullable = false, length = 50)
     private String tipoCartao;
+
+    public Integer getIdTipoCartao() {
+        return idTipoCartao;
+    }
+
+    public void setIdTipoCartao(Integer idTipoCartao) {
+        this.idTipoCartao = idTipoCartao;
+    }
+
+    public String getTipoCartao() {
+        return tipoCartao;
+    }
+
+    public void setTipoCartao(String tipoCartao) {
+        this.tipoCartao = tipoCartao;
+    }
+
+    public TipoCartao(Integer idTipoCartao, String tipoCartao) {
+        this.idTipoCartao = idTipoCartao;
+        this.tipoCartao = tipoCartao;
+    }
+
+    public TipoCartao(){}
 }

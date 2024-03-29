@@ -18,4 +18,27 @@ public class TipoTelefone {
 
     @Column(name = "decricao_tipo_telefone",nullable = false,length = 30)
     private String descricaoTipoTelefone;
+
+    public Integer getIdTipoTelefone() {
+        return idTipoTelefone;
+    }
+
+    public void setIdTipoTelefone(Integer idTipoTelefone) {
+        this.idTipoTelefone = idTipoTelefone;
+    }
+
+    public String getDescricaoTipoTelefone() {
+        return descricaoTipoTelefone;
+    }
+
+    public void setDescricaoTipoTelefone(String descricaoTipoTelefone) {
+        this.descricaoTipoTelefone = descricaoTipoTelefone;
+    }
+
+    public TipoTelefone(Integer idTipoTelefone, String descricaoTipoTelefone) {
+        this.idTipoTelefone = idTipoTelefone;
+        this.descricaoTipoTelefone = descricaoTipoTelefone;
+    }
+
+    public TipoTelefone(){}
 }

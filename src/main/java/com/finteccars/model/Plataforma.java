@@ -15,4 +15,19 @@ public class Plataforma {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_plataforma", nullable = false)
     private Integer idPlataforma;
+
+    public Integer getIdPlataforma() {
+        return idPlataforma;
+    }
+
+    public void setIdPlataforma(Integer idPlataforma) {
+        this.idPlataforma = idPlataforma;
+    }
+
+    public Plataforma(Integer idPlataforma) {
+        this.idPlataforma = idPlataforma;
+    }
+
+    public Plataforma(){}
+    
 }

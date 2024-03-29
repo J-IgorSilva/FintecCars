@@ -18,4 +18,27 @@ public class Pessoa {
 
     @Column(name = "nome_pessoa", nullable = false, length = 100)
     private String nomePessoa;
+
+    public Integer getIdPessoa() {
+        return idPessoa;
+    }
+
+    public void setIdPessoa(Integer idPessoa) {
+        this.idPessoa = idPessoa;
+    }
+
+    public String getNomePessoa() {
+        return nomePessoa;
+    }
+
+    public void setNomePessoa(String nomePessoa) {
+        this.nomePessoa = nomePessoa;
+    }
+
+    public Pessoa(Integer idPessoa, String nomePessoa) {
+        this.idPessoa = idPessoa;
+        this.nomePessoa = nomePessoa;
+    }
+
+    public Pessoa(){}
 }

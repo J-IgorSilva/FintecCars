@@ -18,4 +18,27 @@ public class Imagem {
 
     @Column(name = "tamanho_imagem", nullable = false)
     private Float tamanhoDaImagem;
+
+    public Integer getIdImagem() {
+        return idImagem;
+    }
+
+    public void setIdImagem(Integer idImagem) {
+        this.idImagem = idImagem;
+    }
+
+    public Float getTamanhoDaImagem() {
+        return tamanhoDaImagem;
+    }
+
+    public void setTamanhoDaImagem(Float tamanhoDaImagem) {
+        this.tamanhoDaImagem = tamanhoDaImagem;
+    }
+
+    public Imagem(Integer idImagem, Float tamanhoDaImagem) {
+        this.idImagem = idImagem;
+        this.tamanhoDaImagem = tamanhoDaImagem;
+    }
+
+    public Imagem(){}
 }
